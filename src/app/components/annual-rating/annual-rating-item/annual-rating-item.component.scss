@@ -1,0 +1,185 @@
+@import "src/app/styles/colors";
+
+app-annual-rating-item {
+  .annual-rating-item {
+    a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 0;
+      min-width: 56px;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      background-color: #fff;
+      border: 1px solid #e7e7e7;
+      border-right: none;
+      -webkit-transition: background-color .2s, border-color .2s;
+      transition: background-color .2s, border-color .2s;
+    }
+  }
+
+  &.rating-aaaaaa-button {
+    .annual-rating-item {
+      a {
+        color: $color-aaaaaa;
+
+        &:hover {
+          background: $color-aaaaaa;
+          color: white;
+          border: 1px solid $color-aaaaaa-border;
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &.rating-aaaaa-button {
+    .annual-rating-item {
+      a {
+        color: $color-aaaaa;
+
+        &:hover {
+          background: $color-aaaaa;
+          color: white;
+          border: 1px solid $color-aaaaa-border;
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &.rating-aaaa-button {
+    .annual-rating-item {
+      a {
+        color: $color-aaaa;
+
+        &:hover {
+          background: $color-aaaa;
+          color: white;
+          border: 1px solid $color-aaaa-border;
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &.rating-aaa-button {
+    .annual-rating-item {
+      a {
+        color: $color-aaa;
+
+        &:hover {
+          background: $color-aaa;
+          color: white;
+          border: 1px solid $color-aaa-border;
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &.rating-aae-button {
+    .annual-rating-item {
+      a {
+        color: $color-aae;
+
+        &:hover {
+          background: $color-aae;
+          color: white;
+          border: 1px solid $color-aae-border;
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &.rating-aa-button {
+    .annual-rating-item {
+      a {
+        color: $color-aa;
+
+        &:hover {
+          background: $color-aa;
+          color: white;
+          border: 1px solid $color-aa-border;
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &.rating-ae-button {
+    .annual-rating-item {
+      a {
+        color: $color-ae;
+
+        &:hover {
+          background: $color-ae;
+          color: white;
+          border: 1px solid $color-ae-border;
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &.rating-a-button {
+    .annual-rating-item {
+      a {
+        color: $color-a;
+
+        &:hover {
+          background: $color-a;
+          color: white;
+          border: 1px solid $color-a-border;
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &.rating-b-button {
+    .annual-rating-item {
+      a {
+        color: $color-b;
+
+        &:hover {
+          background: $color-b;
+          color: white;
+          border: 1px solid $color-b-border;
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &.rating-c-button {
+    .annual-rating-item {
+      a {
+        color: $color-c;
+
+        &:hover {
+          background: $color-c;
+          color: white;
+          border: 1px solid $color-c-border;
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &.rating-d-button {
+    .annual-rating-item {
+      a {
+        color: $color-d;
+
+        &:hover {
+          background: $color-d;
+          color: white;
+          border: 1px solid $color-d-border;
+          border-right: none;
+        }
+      }
+    }
+  }
+}

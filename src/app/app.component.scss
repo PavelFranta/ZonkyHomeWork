@@ -1,0 +1,19 @@
+.application {
+  height: 100vh;
+  background: #f6f6f6;
+
+  .body {
+    height: 100vh;
+    padding: 0 10vw;
+
+    & > h1 {
+      background: inherit;
+      font-family: 'Amatic SC', cursive;
+      font-size: 74px;
+      font-weight: 600;
+      text-align: center;
+      color: #37b4be;
+      margin: .67em 0;
+    }
+  }
+}

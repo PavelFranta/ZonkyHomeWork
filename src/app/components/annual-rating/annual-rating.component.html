@@ -1,0 +1,6 @@
+<div class="annual-ratings">
+  <span>Roční úrok</span>
+  <app-annual-rating-item *ngFor="let item of dataService.ratingValues; let i = index"
+                          [class]="colorService.colorsNames[i]"
+                          [value]="item"></app-annual-rating-item>
+</div>

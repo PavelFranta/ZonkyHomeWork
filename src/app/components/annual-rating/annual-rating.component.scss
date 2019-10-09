@@ -1,0 +1,14 @@
+.annual-ratings {
+  display: flex;
+
+  span {
+    align-self: center;
+    font-size: 12px;
+    margin-right: 5px;
+    display: inline;
+  }
+
+  app-annual-rating-item:last-child {
+    border-right: 1px solid #e7e7e7;
+  }
+}
