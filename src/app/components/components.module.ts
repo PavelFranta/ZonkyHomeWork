@@ -3,20 +3,22 @@ import {CommonModule} from '@angular/common';
 import {AnnualRatingComponent} from './annual-rating/annual-rating.component';
 import {HeaderComponent} from './header/header.component';
 import {AnnualRatingItemComponent} from './annual-rating/annual-rating-item/annual-rating-item.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
     AnnualRatingComponent,
     HeaderComponent,
-    AnnualRatingItemComponent
+    AnnualRatingItemComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ],
   exports: [
     AnnualRatingComponent,
-    HeaderComponent
+    HeaderComponent,
   ]
 })
 export class ComponentsModule {

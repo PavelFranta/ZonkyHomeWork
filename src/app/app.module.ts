@@ -1,8 +1,12 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import {LOCALE_ID, NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {ComponentsModule} from './components/components.module';
+import {registerLocaleData} from '@angular/common';
+import localeCZ from '@angular/common/locales/cs';
+
+registerLocaleData(localeCZ, 'cs-CZ');
 
 @NgModule({
   declarations: [
@@ -12,7 +16,10 @@ import {ComponentsModule} from './components/components.module';
     BrowserModule,
     ComponentsModule
   ],
-  providers: [],
+  providers: [{
+    provide: LOCALE_ID,
+    useValue: 'cs-CZ'
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule {

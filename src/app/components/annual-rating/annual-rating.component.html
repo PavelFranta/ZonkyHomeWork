@@ -1,6 +1,12 @@
 <div class="annual-ratings">
-  <span>Roční úrok</span>
-  <app-annual-rating-item *ngFor="let item of dataService.ratingValues; let i = index"
-                          [class]="colorService.colorsNames[i]"
-                          [value]="item"></app-annual-rating-item>
-</div>
+  <span class="choose-rating-label">Vyberte úrok</span>
+  <div class="annual-rating-detail-section">
+    <app-annual-rating-item *ngFor="let item of dataService.ratingValues; let i = index"
+                            [class]="colorService.colorsNames[i]"
+                            [value]="item"></app-annual-rating-item>
+    <div *ngIf="ratingSelected" class="annual-rating-result-detail">
+      <span>Při úroku <span class="result non-block">{{ratingSelected}}</span> si ostatní plní sny za průměrně:</span>
+      <span *ngIf="resultLoanAverageAmount"
+            class="result">{{ resultLoanAverageAmount | currency:'CZK':'symbol-narrow':'':'cs-CZ' }}</span>
+    </div>
+  </div>

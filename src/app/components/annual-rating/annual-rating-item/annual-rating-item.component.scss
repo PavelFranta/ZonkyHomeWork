@@ -1,8 +1,11 @@
 @import "src/app/styles/colors";
 
 app-annual-rating-item {
+  display: inline-table;
+  align-self: center;
   .annual-rating-item {
     a {
+      cursor: pointer;
       text-decoration: none;
       display: inline-block;
       padding: 8px 0;
@@ -172,7 +175,6 @@ app-annual-rating-item {
     .annual-rating-item {
       a {
         color: $color-d;
-
         &:hover {
           background: $color-d;
           color: white;

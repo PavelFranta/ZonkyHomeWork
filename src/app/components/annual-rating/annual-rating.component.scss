@@ -2,13 +2,42 @@
   display: flex;
 
   span {
-    align-self: center;
-    font-size: 12px;
-    margin-right: 5px;
-    display: inline;
+    font-size: 16px;
+    line-height: 31px;
+    display: block;
+
+    &.choose-rating-label {
+      margin-right: 8px;
+    }
+
+    &.result {
+      animation: fadein 2s;
+      font-size: 2rem;
+      margin-left: 8px;
+
+      &.non-block {
+        margin: 0 .2rem;
+        display: inline;
+        animation: none;
+      }
+    }
   }
 
   app-annual-rating-item:last-child {
     border-right: 1px solid #e7e7e7;
+  }
+
+  .annual-rating-result-detail {
+    padding: 2.5rem 0;
+    display: flex;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

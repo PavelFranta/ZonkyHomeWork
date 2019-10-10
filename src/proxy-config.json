@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://api.zonky.cz/loans/marketplace",
+    "secure": false,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "changeOrigin": true
+  }
+}
