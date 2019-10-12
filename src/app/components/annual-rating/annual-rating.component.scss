@@ -1,5 +1,7 @@
 .annual-ratings {
-  display: flex;
+  .rating-picker {
+    display: flex;
+  }
 
   span {
     font-size: 16px;
@@ -30,6 +32,14 @@
   .annual-rating-result-detail {
     padding: 2.5rem 0;
     display: flex;
+
+    .big-display {
+      display: block;
+    }
+
+    .small-display {
+      display: none;
+    }
   }
 }
 
@@ -39,6 +49,26 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .annual-ratings {
+    .annual-rating-result-detail {
+      display: block;
+
+      .big-display {
+        display: none;
+      }
+
+      .small-display {
+        display: block;
+      }
+
+      span {
+        font-size: 4vw;
+      }
+    }
   }
 }
 

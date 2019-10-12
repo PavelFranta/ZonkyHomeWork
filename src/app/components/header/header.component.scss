@@ -82,8 +82,7 @@
 }
 
 .hamburger-menu {
-  display: none;
-
+  visibility: hidden;
   .nav-item-hamburger {
     height: 30px;
     background: white;
@@ -143,7 +142,7 @@
     }
   }
   .hamburger-menu {
-    display: block;
+    visibility: visible;
   }
 }
 

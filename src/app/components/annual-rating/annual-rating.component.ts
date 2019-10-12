@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {AnnualRatingService} from '../../services/annual-rating.service';
-import {ColorsService} from './service/colors.service';
+import {ColorButtonNameService} from './service/color-button-name.service';
 import {ZonkyRealDataService} from '../../services/zonky-real-data.service';
 
 @Component({
@@ -14,13 +14,15 @@ export class AnnualRatingComponent implements OnInit {
   resultLoanAverageAmount: any;
 
   constructor(public dataService: AnnualRatingService,
-              public colorService: ColorsService,
+              public colorService: ColorButtonNameService,
               private zonkyRealDataService: ZonkyRealDataService) {
     this.ratingSelected = null;
-    this.zonkyRealDataService.ratingButtonClicked.subscribe(rating => {
+    this.zonkyRealDataService.ratingButtonClicked
+      .subscribe(rating => {
       this.ratingSelected = rating.toString();
     });
-    this.zonkyRealDataService.averageLoanAmount.subscribe(resultLoanAverageAmount => {
+    this.zonkyRealDataService.averageLoanAmount
+      .subscribe(resultLoanAverageAmount => {
       this.resultLoanAverageAmount = resultLoanAverageAmount;
     });
   }
