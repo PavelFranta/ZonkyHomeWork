@@ -26,14 +26,8 @@
     height: 100%;
     display: flex;
 
-    .phone-contact {
-      color: #37b4be;
-
-      a {
-        color: inherit;
-        text-decoration: none;
-        font-weight: bolder;
-      }
+    .hamburger-button {
+      display: none;
     }
 
     .language-indicator {
@@ -76,3 +70,80 @@
     }
   }
 }
+
+.phone-contact {
+  color: #37b4be;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+
+  .nav-item-hamburger {
+    height: 30px;
+    background: white;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+
+    i {
+      padding-right: .75rem;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 620px) {
+  .header {
+    .nav-right {
+      .phone-contact {
+        padding-right: 0;
+      }
+
+      .language-indicator {
+        display: none;
+      }
+
+      .separator-vertical {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  .header {
+    .nav-right {
+      .hamburger-button {
+        display: block;
+        padding: 8px 15px;
+        cursor: pointer;
+      }
+
+      .phone-contact {
+        display: none;
+      }
+
+      .language-indicator {
+        display: none;
+      }
+
+      .separator-vertical {
+        display: none;
+      }
+
+      .log-in-button {
+        display: none;
+      }
+    }
+  }
+  .hamburger-menu {
+    display: block;
+  }
+}
+

@@ -7,8 +7,7 @@
   <nav class="navigation">
     <div class="nav-right">
       <div class="nav-item phone-contact">
-        <i class="fas fa-phone fa-lg"></i>
-        <a href="tel:+420800449999">+420 800 449 999</a>
+        <ng-container *ngTemplateOutlet="telTemplate"></ng-container>
       </div>
       <div class="nav-item language-indicator">
         <div class="flag">
@@ -18,9 +17,29 @@
       </div>
       <hr class="separator-vertical">
       <div class="nav-item log-in-button">
-        <i class="far fa-user-circle fa-lg"></i>
-        <strong>Přihlásit se</strong>
+        <ng-container *ngTemplateOutlet="logInTemplate"></ng-container>
       </div>
+      <i (click)="showHamburgerMenu = true" *ngIf="!showHamburgerMenu" class="fas fa-bars fa-2x hamburger-button"></i>
+      <i (click)="showHamburgerMenu = false" *ngIf="showHamburgerMenu" class="fas fa-times fa-2x hamburger-button"></i>
     </div>
   </nav>
 </div>
+<div *ngIf="showHamburgerMenu" class="hamburger-menu">
+  <div class="nav-item-hamburger phone-contact">
+    <ng-container *ngTemplateOutlet="telTemplate"></ng-container>
+  </div>
+  <div class="nav-item-hamburger log-in-button">
+    <ng-container *ngTemplateOutlet="logInTemplate"></ng-container>
+  </div>
+</div>
+
+<ng-template #telTemplate>
+  <i class="fas fa-phone fa-lg"></i>
+  <a href="tel:+420800449999">+420 800 449 999</a>
+</ng-template>
+
+<ng-template #logInTemplate>
+  <i class="far fa-user-circle fa-lg"></i>
+  <strong>Přihlásit se</strong>
+</ng-template>
+
