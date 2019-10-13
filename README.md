@@ -15,9 +15,13 @@ HomeWork app je responsivní.
 # How to play
 
 1 - Download / Clone
+
 2 - npm install ( install packages ) - Node JS required
+
 3 - npm start 
+
 4 - enjoy & HIRE PAVEL :)
+
 
 
 
