@@ -4,6 +4,7 @@ import {AnnualRatingComponent} from './annual-rating/annual-rating.component';
 import {HeaderComponent} from './header/header.component';
 import {AnnualRatingItemComponent} from './annual-rating/annual-rating-item/annual-rating-item.component';
 import {HttpClientModule} from '@angular/common/http';
+import {FooterComponent} from './footer/footer.component';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
     AnnualRatingComponent,
     HeaderComponent,
     AnnualRatingItemComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
@@ -19,6 +21,7 @@ import {HttpClientModule} from '@angular/common/http';
   exports: [
     AnnualRatingComponent,
     HeaderComponent,
+    FooterComponent
   ]
 })
 export class ComponentsModule {

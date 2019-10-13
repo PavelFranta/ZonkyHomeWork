@@ -1,6 +1,10 @@
 .annual-ratings {
   .rating-picker {
     display: flex;
+
+    .big-display {
+      display: flex;
+    }
   }
 
   span {
@@ -34,7 +38,7 @@
     display: flex;
 
     .big-display {
-      display: block;
+      display: flex;
     }
 
     .small-display {
@@ -54,6 +58,7 @@
 
 @media screen and (max-width: 775px) {
   .annual-ratings {
+    display: block;
     .annual-rating-result-detail {
       display: block;
 
