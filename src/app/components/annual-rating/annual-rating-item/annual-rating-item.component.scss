@@ -3,6 +3,7 @@
 app-annual-rating-item {
   display: inline-table;
   align-self: center;
+
   .annual-rating-item {
     a {
       cursor: pointer;
@@ -18,6 +19,11 @@ app-annual-rating-item {
       border-right: none;
       -webkit-transition: background-color .2s, border-color .2s;
       transition: background-color .2s, border-color .2s;
+
+      &:hover {
+        color: white !important;
+        border-right: none;
+      }
     }
   }
 
@@ -28,9 +34,7 @@ app-annual-rating-item {
 
         &:hover {
           background: $color-aaaaaa;
-          color: white;
           border: 1px solid $color-aaaaaa-border;
-          border-right: none;
         }
       }
     }
@@ -43,9 +47,7 @@ app-annual-rating-item {
 
         &:hover {
           background: $color-aaaaa;
-          color: white;
           border: 1px solid $color-aaaaa-border;
-          border-right: none;
         }
       }
     }
@@ -58,9 +60,7 @@ app-annual-rating-item {
 
         &:hover {
           background: $color-aaaa;
-          color: white;
           border: 1px solid $color-aaaa-border;
-          border-right: none;
         }
       }
     }
@@ -73,9 +73,7 @@ app-annual-rating-item {
 
         &:hover {
           background: $color-aaa;
-          color: white;
           border: 1px solid $color-aaa-border;
-          border-right: none;
         }
       }
     }
@@ -88,9 +86,7 @@ app-annual-rating-item {
 
         &:hover {
           background: $color-aae;
-          color: white;
           border: 1px solid $color-aae-border;
-          border-right: none;
         }
       }
     }
@@ -103,9 +99,7 @@ app-annual-rating-item {
 
         &:hover {
           background: $color-aa;
-          color: white;
           border: 1px solid $color-aa-border;
-          border-right: none;
         }
       }
     }
@@ -118,9 +112,7 @@ app-annual-rating-item {
 
         &:hover {
           background: $color-ae;
-          color: white;
           border: 1px solid $color-ae-border;
-          border-right: none;
         }
       }
     }
@@ -133,9 +125,7 @@ app-annual-rating-item {
 
         &:hover {
           background: $color-a;
-          color: white;
           border: 1px solid $color-a-border;
-          border-right: none;
         }
       }
     }
@@ -148,9 +138,7 @@ app-annual-rating-item {
 
         &:hover {
           background: $color-b;
-          color: white;
           border: 1px solid $color-b-border;
-          border-right: none;
         }
       }
     }
@@ -163,9 +151,7 @@ app-annual-rating-item {
 
         &:hover {
           background: $color-c;
-          color: white;
           border: 1px solid $color-c-border;
-          border-right: none;
         }
       }
     }
@@ -175,11 +161,10 @@ app-annual-rating-item {
     .annual-rating-item {
       a {
         color: $color-d;
+
         &:hover {
           background: $color-d;
-          color: white;
           border: 1px solid $color-d-border;
-          border-right: none;
         }
       }
     }

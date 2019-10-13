@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,17 +6,10 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
   styleUrls: ['./header.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   showHamburgerMenu: boolean;
 
   constructor() {
     this.showHamburgerMenu = false;
-  }
-
-  ngOnInit() {
-  }
-
-  showHamburgerDetail() {
-
   }
 }

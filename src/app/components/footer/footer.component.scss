@@ -1,20 +1,68 @@
 app-footer {
-  height: 100px;
   bottom: 0;
   width: 100%;
-  display: block;
 
   .footer {
+    height: 200px;
     background: #242424;
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem 11.5rem;
+
+    span {
+      padding-bottom: 1rem;
+      color: white;
+      display: block;
+    }
 
     .brief-details {
-      color: white;
       display: flex;
       flex-direction: column;
-      padding: 1rem;
+    }
 
-      span {
-        padding-bottom: .5rem;
+    .zonky-hero {
+      display: flex;
+
+      .pavel-citat {
+
+        span {
+          padding-right: 1rem;
+        }
+      }
+
+      img {
+        height: 100px;
+        width: auto;
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      a {
+        text-decoration: none;
+        color: white;
+        padding-bottom: .4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  app-footer {
+    .footer {
+      padding: 3.5rem 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  app-footer {
+    .footer {
+      .brief-details {
+        display: none;
       }
     }
   }

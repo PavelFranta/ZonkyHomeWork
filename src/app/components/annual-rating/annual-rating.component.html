@@ -2,14 +2,16 @@
   <div class="rating-picker">
     <span class="choose-rating-label">Vyberte úrok</span>
     <div class="annual-rating-detail-section">
-      <app-annual-rating-item *ngFor="let item of dataService.ratingValues; let i = index"
+      <app-annual-rating-item *ngFor="let item of dataService.percentValues; let i = index"
                               [class]="colorService.colorsNames[i]"
                               [value]="item"></app-annual-rating-item>
     </div>
   </div>
   <div *ngIf="ratingSelected" class="annual-rating-result-detail">
     <div class="big-display">
-      <span>Při úroku <span class="result non-block">{{ratingSelected}}</span> si ostatní plní sny za průměrně:</span>
+      <span>Při úroku
+        <span class="result non-block">{{ratingSelected}}</span>
+        si ostatní plní sny za průměrně:</span>
       <span *ngIf="resultLoanAverageAmount"
             class="result">{{ resultLoanAverageAmount | currency:'CZK'}}</span>
     </div>
