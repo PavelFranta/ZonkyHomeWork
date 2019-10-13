@@ -1,27 +1,20 @@
 # ZonkyHomeWork
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
+Angular 8 project, napojený na Zonky API.
+(Angular 8 project, connected to Zonky API)
 
-## Development server
+Z API si vyfiltruje 1000 posledních půjček (field: Amount).
+(Get last 1000 loans with parameter (field: Amount only))
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Na FE se vypočítá průměr a zobrazí uživateli.
+(Average is calculated on FE and displayed to user)
 
-## Code scaffolding
+HomeWork app je responsivní.
+(HomeWork app is responsive)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# How to play
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
